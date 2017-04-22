@@ -1,0 +1,38 @@
+{
+  "name": "react-refresher",
+  "version": "1.0.0",
+  "description": "React pull-to-refresh component for mobile web-app",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel ./src/refresher.js -o index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d62remi/react-refresher.git"
+  },
+  "keywords": [
+    "react",
+    "pull-to-refresh",
+    "pull",
+    "refresh",
+    "web-app",
+    "web",
+    "app"
+  ],
+  "author": "Rémi Boudeweel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d62remi/react-refresher/issues"
+  },
+  "homepage": "https://github.com/d62remi/react-refresher#readme",
+  "dependencies": {
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1"
+  }
+}
