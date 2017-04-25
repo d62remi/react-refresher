@@ -14,6 +14,10 @@ var _propTypes = require('prop-types');
 
 var _reactDom = require('react-dom');
 
+var _promise = require('promise');
+
+var _promise2 = _interopRequireDefault(_promise);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -152,9 +156,9 @@ var Refresher = function (_Component) {
         key: '_refreshing',
         value: function _refreshing() {
             if (this.props.refreshingFunc) {
-                return new Promise(this.props.refreshingFunc);
+                return new _promise2.default(this.props.refreshingFunc);
             } else {
-                return new Promise(function (resolve, reject) {
+                return new _promise2.default(function (resolve, reject) {
                     setTimeout(function () {
                         resolve();
                     }, 1000);
