@@ -4,7 +4,7 @@
   "description": "React pull-to-refresh component for mobile web-app",
   "main": "index.js",
   "scripts": {
-    "build": "babel ./src/refresher.js -o index.js -w"
+    "build": "babel ./src/refresher.js -o index.js"
   },
   "repository": {
     "type": "git",

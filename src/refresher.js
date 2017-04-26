@@ -31,7 +31,6 @@ export default class Refresher extends Component {
     let pn = findDOMNode(this) && findDOMNode(this).parentNode
     pn.style.transition = `${this.state.transitionDuration}ms linear`
     pn.style.transform = `translateY(-${this.state.height}px)` 
-    pn.style.height = `100%` 
 
     pn.addEventListener('touchstart',this._touchStart)
     pn.addEventListener('touchmove',this._touchMove)
