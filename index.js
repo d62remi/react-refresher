@@ -62,6 +62,7 @@ var Refresher = function (_Component) {
             var pn = (0, _reactDom.findDOMNode)(this) && (0, _reactDom.findDOMNode)(this).parentNode;
             pn.style.transition = this.state.transitionDuration + 'ms linear';
             pn.style.transform = 'translateY(-' + this.state.height + 'px)';
+            pn.style.height = '100%';
 
             pn.addEventListener('touchstart', this._touchStart);
             pn.addEventListener('touchmove', this._touchMove);
